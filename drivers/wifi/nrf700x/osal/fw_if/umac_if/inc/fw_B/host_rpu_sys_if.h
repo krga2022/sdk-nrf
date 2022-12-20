@@ -158,6 +158,7 @@ enum rpu_tput_mode {
 	RPU_TPUT_MODE_VHT,
 	RPU_TPUT_MODE_HE_SU,
 	RPU_TPUT_MODE_HE_ER_SU,
+	RPU_TPUT_MODE_HE_TB,
 	RPU_TPUT_MODE_MAX
 };
 
@@ -666,6 +667,8 @@ struct rpu_conf_params {
 	unsigned int rts_threshold;
 	unsigned int uapsd_queue;
 	unsigned int tx_pkt_gap_us;
+	unsigned char ru_tone;   /*26,52,106,242*/
+        unsigned char ru_index;  /*26:1-9, 52:1-4, 106:1-2, 242:1*/
 } __NRF_WIFI_PKD;
 
 /**

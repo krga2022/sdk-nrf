@@ -93,6 +93,16 @@ Wi-Fi radio test subcommands
    * - tx_power
      - <val> – Transmit power in dBm.
      - Transmit power for frame transmission.
+   * - ru_tone
+     - <val> – Desired resource unit (RU) size (26,52,106 or 242).
+     - Configures the resource unit (RU) size.
+   * - ru_index
+     - | <val> – Valid Values:
+       |         For 26 ru_tone: 1 to 9
+       |         For 52 ru_tone: 1 to 4
+       |         For 106 ru_tone: 1 to 2
+       |         For 242 ru_tone: 1
+     - Configures the location of resource unit (RU) in 20 MHz spectrum.
    * - tx
      - | 0 – Disable
        | 1 – Enable
