@@ -472,6 +472,24 @@
   - "samples/wifi/**/*7120*"
   - "samples/wifi/wfa_qt_app/nrf7120*"
 
+"CI-wifi-7120-vu19p":
+  - "drivers/wifi/nrf71/**/*"
+  - "include/drivers/wifi/nrf71/**/*"
+  - "include/net/wifi_*"
+  - "tests/drivers/nrf_wifi/**/*"
+  - "tests/drivers/nrf71*/**/*"
+  - "samples/wifi/**/nrf7120*"
+  - "samples/wifi/**/*7120*"
+  - "samples/wifi/**/overlay-nrf71*"
+  - "samples/wifi/wfa_qt_app/nrf7120*"
+  - "subsys/net/l2_wifi_if_conn/**/*"
+  - "subsys/net/lib/wifi_*"
+  - "subsys/net/lib/softap_wifi_provision/**/*"
+  - "subsys/net/lib/hostap_crypto/**/*"
+  - "subsys/partition_manager/pm.yml.wifi"
+  - "sysbuild/Kconfig.wifi"
+  - "scripts/wifi_test/**/*"
+
 "CI-cloud-test":
   - "include/caf/**/*"
   - "include/date_time.h"
